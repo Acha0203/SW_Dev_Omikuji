@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+}
+
+.yuji-syuku {
+  font-family: 'Yuji Syuku', serif;
+}
+
+.light {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+.omikuji-box {
+  height: 15rem;
+}
+
+.omikuji {
+  width: 280px;
+  height: auto;
+  border: thick double #ff0000;
+  outline: 0.2rem solid #ff0000;
+}
+
+.illust {
+  width: 260px;
+}
+
+.fortune {
+  font-size: 5rem;
+}
+
+.line-red {
+  border-top: 2px solid #ff0000;
+  width: 260px;
+}
