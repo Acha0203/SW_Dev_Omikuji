@@ -286,9 +286,3 @@ function drawOmikuji() {
   let omikuji = new Omikuji();
   goToOmikujiPage(omikuji);
 }
-
-let omikujiBtn = document.getElementById('draw-omikuji');
-
-omikujiBtn.addEventListener('click', function () {
-  drawOmikuji();
-});
