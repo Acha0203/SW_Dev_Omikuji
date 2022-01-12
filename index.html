@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="あなたのソフトウェア開発の行方を占います。"
+    />
     <!-- Destyle CSS -->
     <link rel="stylesheet" href="styles/destyle.css" />
     <!-- Bootstrap CSS -->
@@ -28,27 +32,53 @@
       <!-- Top page -->
       <div
         id="top-page"
-        class="vh-100 d-flex justify-content-center align-items-center flex-column"
+        class="vh-100 d-flex justify-content-around align-items-center flex-column"
       >
-        <h1 class="text-danger yuji-syuku">ソフトウェア開発</h1>
-        <h1 class="text-danger yuji-syuku">みくじ</h1>
-        <img
-          class="light m-5 omikuji-box"
-          src="images/syougatsu2_omijikuji2.png"
-        />
-        <button
-          id="draw-omikuji"
-          type="button"
-          onclick="drawOmikuji(); event.preventDefault()"
-          class="btn btn-danger rounded-pill yuji-syuku"
-        >
-          おみくじを引く
-        </button>
+        <section>
+          <div class="pt-5">
+            <div class="text-center">
+              <h1 class="text-danger yuji-syuku">ソフトウェア開発</h1>
+              <h1 class="text-danger yuji-syuku">みくじ</h1>
+              <img
+                class="light m-4 omikuji-box"
+                src="images/syougatsu2_omijikuji2.png"
+              />
+            </div>
+            <div class="d-flex justify-content-around align-items-center pb-5">
+              <button
+                id="draw-omikuji"
+                type="button"
+                onclick="drawOmikuji(); event.preventDefault()"
+                class="btn btn-danger rounded-pill yuji-syuku"
+              >
+                おみくじを引く
+              </button>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="about.html">
+                <p class="text-danger yuji-syuku middle-font">
+                  このおみくじについて
+                </p>
+              </a>
+              <p class="text-danger middle-font">｜</p>
+              <a href="developers.html">
+                <p class="text-danger yuji-syuku middle-font">開発者一覧</p>
+              </a>
+            </div>
+            <div class="text-center">
+              <p class="text-danger small-font">©ソフトウェア開発みくじ</p>
+            </div>
+          </div>
+        </footer>
       </div>
       <!-- おみくじの枠 -->
       <div
         id="omikuji-page"
-        class="vh-100 d-flex justify-content-center align-items-center flex-column"
+        class="vh-100 d-flex justify-content-center align-items-center flex-column d-none"
       ></div>
     </div>
     <script type="text/javascript" src="scripts/main.js"></script>
